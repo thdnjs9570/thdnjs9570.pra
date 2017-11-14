@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sowon.myapplication.MainActivity">
+
+    <android.support.v7.widget.ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세뜰"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+
+    </android.support.v7.widget.ActionMenuView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="55dp"
+            android:text="친구랑 같이 싸게 사자, 공동구매"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/money_gather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft=  "10dp"
+            android:layout_marginTop="53dp"
+            android:text="전체보기" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:padding="16dp"
+        android:id="@+id/mainrelative"
+        >
+
+
+        <com.sowon.myapplication.View_Flipper
+            android:id="@+id/screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </com.sowon.myapplication.View_Flipper>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainrelative">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돈도 벌고 역량도 펼치는, 교내활동 소식"
+            android:textSize="17dp"
+            />
+
+        <Button
+            android:id="@+id/btn_cobuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더보기" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+    <include
+        layout="@layout/fixed_bottom_bar">
+    </include>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

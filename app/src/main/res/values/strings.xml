@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="app_name2">안녕</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="names">
+        <item>카테고리</item>
+        <item>푸드</item>
+        <item>문화</item>
+        <item>뷰티</item>
+        <item>기타</item>
+
+
+    </string-array>
+</resources>
